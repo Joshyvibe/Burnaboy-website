@@ -1,0 +1,42 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "Love Damini",
+            "price": 2999,
+            "imgName": "album1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Twice As Tall",
+            "price": 2299,
+            "imgName": "album2.webp"
+        },
+        {
+            "id": 3,
+            "name": "Outside",
+            "price": 1999,
+            "imgName": "album3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "African Giant",
+            "price": 1999,
+            "imgName": "album4.jpeg"
+        }
+    ],
+    "merch": [
+        {
+            "id": 5,
+            "name": "Tshirt",
+            "price": 1999,
+            "imgName": "burna_merch.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Cofee Cup",
+            "price": 699,
+            "imgName": "burna_mug.jpg"
+        }
+    ]
+}

@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+@font-face {
+    font-family: "Royden";
+    src: url("fonts/RoydenDemoRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+:root{
+    /*main color */
+    --MAIN-COLOR: #053f4f;
+    --BGCOLOR-FADE: rgb(252, 22., 160);
+    --BGCOLOR: orange;
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR));
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-image: url("images/burna1.jpg");
+    background-blend-mode: multiply;
+    background-size:100%;
+    animation: slideBackground 15s linear infinite;
+    background-color: var(--MAIN-COLOR);
+  
+}
+
+.nav {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+}
+  .nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #fff;
+}
+  .nav > .nav-list {
+    display: flex;
+    font-family: 'Royden', sans-serif;
+    gap: 2rem;
+}
+  .nav > .nav-list > li {
+    list-style-type: none;
+}
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    transition: color 0.1s ease-in;
+    cursor: pointer;
+  }
+
+  .nav > .nav-list > li > a:hover {
+    color: #15b6cf; /* Change color as desired */
+    height: 150px;
+}
+  .nav > #nav-check {
+      display: none;
+}
+
+.main-header {
+    background-color: #053f4f;
+    background-image: url("images/burna.jpg");
+    background-blend-mode: multiply;
+    background-size:calc(100vh - 50px);
+    height: 25 0px;
+    animation: slideBackground 10s linear infinite;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: -10px;
+    font-size: 4em;
+    font-family: 'Royden', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+.band-name-footer {
+    display: none;
+}
+.band-name text{
+    margin-right: 1500px;
+}
+
+.band-name-large {
+    font-size: 4em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #d3cfcf;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 260px;
+    width: 260px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+   
+}
+
+.btn-header {
+    margin: 1.5em 15% 2em 15%;
+    color: white;
+    height: 2px;
+    border:transparent 1px solid var(--MAIN-COLOR);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 20PX;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+   
+}
+
+.album:hover {
+    background-color:var(--MAIN-COLOR);
+    background-image:url("images/burna2.jpg");
+}
+.album {
+    position: absolute;
+    left: 20px; /* Adjust the value as needed */
+    bottom: -370px; /* Optional: Adjust the vertical position */
+    transform: translateY(-50%); /* Optional: Vertically center the element */
+    display: none;
+    padding: 10px 20px;
+    background-color: #156884;
+    background-image: url("images/burna1.jpg");
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+  
+.btn-header:hover {
+    background-color:rgba(8, 73, 99, 0.3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--MAIN-COLOR);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #135377;
+}
+
+.tour-row {
+    border-bottom: 1px solid rgb(241, 236, 236);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #b6b3b3;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Royden', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #b6b3b3;
+    margin-bottom: 15px;
+}
+.streaming-icon, .social-media-icon {
+    font-size: 20px;
+    color: #333333;
+    margin-right: 10px;
+}
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #b6b3b3;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #b6b3b3;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(83, 81, 81);
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    color: #b6b3b3;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #b6b3b3;
+}
+
+.cart-quantity {
+    width: 35%;
+    color: #b6b3b3;
+}
+
+.cart-item-title {
+    color: #b6b3b3;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: whitesmoke;
+    color: var(--MAIN-COLOR);
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-quantity-input:focus {
+    color: var(--MAIN-COLOR);
+    border-color: var(--MAIN-COLOR);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem var(--MAIN-COLOR);
+}
+.cart-row:last-child {
+    border-bottom: 1px solid rgb(81, 79, 79);
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #b6b3b3;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #b6b3b3;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.animated-word {
+    animation: wordAnimation 2s infinite;
+    font-family: 'Royden', sans-serif;
+   
+}
+  
+  @keyframes wordAnimation {
+    0% {
+      color: rgb(138, 36, 36);
+    }
+    20% {
+      color: var(--MAIN-COLOR);
+    }
+    40% {
+      color: #e4cfcf;
+    }
+    60% {
+      color: #f1de10;
+    }
+    80% {
+      color: #f11048;
+    }
+    100% {
+      color: green;
+    }
+}
+
+/* for mobile nav */
+
+
+/* Default styles */
+
+/* Styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+    html, body {
+        display:contents;
+        
+    }
+    .band-name{
+        font-size: 40px;
+    }
+    .tour-row {
+        font-size: small;
+        padding: auto;
+    }
+    .tour-btn {
+        max-width: 19%;
+        font-size: 12px;
+    }
+    
+    .nav {
+        padding: 1rem;
+      }
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 0.2rem;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #1cc5e3;
+       
+      }
+      .nav > .nav-list {
+        position: absolute;
+        display: flex;
+        flex-direction:inherit;
+        gap: 0.5rem;
+        width: 100%;
+        background-color: transparent;
+        height: 0;
+        transition: all 0.1s ease-in;
+        top: 25px;
+        left: 0;
+        overflow: hidden;
+      }
+      
+      .nav > .nav-list > li {
+        width: 100%;
+        margin-bottom: 0.2rem;
+      }
+      
+      .nav > .nav-list > li > a {
+        color: whitesmoke; /* Change color as desired */
+        text-decoration: none;
+        transition: color 0.1s ease-in;
+      }
+      
+      .nav > .nav-list > li > a:hover {
+        color: #15b6cf; /* Change color as desired */
+        height: 150px;
+      }
+      .nav > #nav-check:checked ~ .nav-list {
+        height: calc(100vh - 50px);
+      }
+
+    .band-name-footer {
+        display: block;
+        text-align: center;
+        margin: 30px;
+        position: absolute;
+        bottom: auto;
+        right: 15px;
+        font-size: 0.9em;
+        font-family: 'Royden', sans-serif;
+        font-weight: normal;
+        color: white;
+      }
+      .footer-nav img {
+        position: relative;
+        top: -15px;
+        left: -10px;
+        padding-right: 5px;
+        width: auto;
+        height: 25px;
+        
+    }
+    .main-footer-container {
+        display: inline-block;
+        height: 50px;
+    }
+
+    
+    /* CSS rules specific to screens up to 768px */
+}
+  
+  /* Styles for screens between 768px and 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .tour-row {
+        font-size: small;
+        padding: auto;
+    }
+    .tour-btn {
+        max-width: 19%;
+        font-size: 12px;
+    }
+    .band-name-footer {
+        display: block;
+        text-align: center;
+        margin: 10px;
+        position: absolute;
+        bottom: auto;
+        right: 15px;
+        font-size: 0.9em;
+        font-family: 'Royden', sans-serif;
+        font-weight: normal;
+        color: white;
+      }
+      .footer-nav img {
+        position: relative;
+        top: -15px;
+        left: -10px;
+        padding-right: 5px;
+        width: auto;
+        height: 25px;
+        
+    }
+    .main-footer-container {
+        display: inline-block;
+        height: 50px;
+    }
+    /* CSS rules specific to screens between 769px and 1024px */
+}
+  
+  /* Styles for screens above 1024px */
+  @media (min-width: 1025px) {
+    .band-name-footer {
+        display: block;
+        text-align: center;
+        margin: 30px;
+        position: absolute;
+        bottom: auto;
+        right: 15px;
+        font-size: 0.9em;
+        font-family: 'Royden', sans-serif;
+        font-weight: normal;
+        color: white;
+      }
+      .footer-nav img {
+        position: relative;
+        top: 5px;
+        left: -10px;
+        padding-right: 5px;
+        width: auto;
+        height: 25px;
+        
+    }
+    .main-footer-container {
+        display: inline-block;
+        height: 50px;
+    }
+    /* CSS rules specific to screens above 1024px */
+}
+  
+  @keyframes slideBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+}
